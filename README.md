@@ -87,3 +87,27 @@ Severity: High
 8. Final Verdict
 
 This incident represents a successful brute-force attack resulting in unauthorized access.
+
+📁 Screenshots
+### Detection – Multiple Authentication Failures Detected
+![Detection Dashboard](screenshots/01-detection.png)
+
+### Multiple Failed Login Attempts Detected
+![Multiple Failed Logins](screenshots/02-multiple-failed-logins.png)
+
+### Event Log Analysis (Windows Event ID 4625)
+![Event ID 4625 Details](screenshots/03-eventid-4625-log-details.png)
+
+### Event Log Analysis (Windows Event ID 4625)
+
+![Event ID 4625 Details](screenshots/03-eventid-4625-log-details.png)
+
+Additional forensic fields from the same log:
+
+![Event ID 4625 Additional Fields](screenshots/03b-eventid-4625-additional-fields.png)
+
+### SIEM Detection – Wazuh Rule Triggered
+
+Wazuh correlated Windows Security logs and triggered an authentication failure detection rule.
+
+![Wazuh Rule Analysis](screenshots/04-wazuh-rule-analysis-authentication-failure.png)
